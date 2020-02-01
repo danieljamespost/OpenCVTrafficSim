@@ -1,0 +1,37 @@
+[
+{
+  "directory": "/home/daniel/src/personal/courses/udacity-projects/TrafficSim/build",
+  "command": "/usr/bin/c++  -DLZMA_API_STATIC -isystem /home/daniel/vcpkg/installed/x64-linux/include/opencv4  -std=c++17 -g -pthread   -o CMakeFiles/traffic_simulation.dir/src/Graphics.cpp.o -c /home/daniel/src/personal/courses/udacity-projects/TrafficSim/src/Graphics.cpp",
+  "file": "/home/daniel/src/personal/courses/udacity-projects/TrafficSim/src/Graphics.cpp"
+},
+{
+  "directory": "/home/daniel/src/personal/courses/udacity-projects/TrafficSim/build",
+  "command": "/usr/bin/c++  -DLZMA_API_STATIC -isystem /home/daniel/vcpkg/installed/x64-linux/include/opencv4  -std=c++17 -g -pthread   -o CMakeFiles/traffic_simulation.dir/src/Intersection.cpp.o -c /home/daniel/src/personal/courses/udacity-projects/TrafficSim/src/Intersection.cpp",
+  "file": "/home/daniel/src/personal/courses/udacity-projects/TrafficSim/src/Intersection.cpp"
+},
+{
+  "directory": "/home/daniel/src/personal/courses/udacity-projects/TrafficSim/build",
+  "command": "/usr/bin/c++  -DLZMA_API_STATIC -isystem /home/daniel/vcpkg/installed/x64-linux/include/opencv4  -std=c++17 -g -pthread   -o CMakeFiles/traffic_simulation.dir/src/Street.cpp.o -c /home/daniel/src/personal/courses/udacity-projects/TrafficSim/src/Street.cpp",
+  "file": "/home/daniel/src/personal/courses/udacity-projects/TrafficSim/src/Street.cpp"
+},
+{
+  "directory": "/home/daniel/src/personal/courses/udacity-projects/TrafficSim/build",
+  "command": "/usr/bin/c++  -DLZMA_API_STATIC -isystem /home/daniel/vcpkg/installed/x64-linux/include/opencv4  -std=c++17 -g -pthread   -o CMakeFiles/traffic_simulation.dir/src/TrafficLight.cpp.o -c /home/daniel/src/personal/courses/udacity-projects/TrafficSim/src/TrafficLight.cpp",
+  "file": "/home/daniel/src/personal/courses/udacity-projects/TrafficSim/src/TrafficLight.cpp"
+},
+{
+  "directory": "/home/daniel/src/personal/courses/udacity-projects/TrafficSim/build",
+  "command": "/usr/bin/c++  -DLZMA_API_STATIC -isystem /home/daniel/vcpkg/installed/x64-linux/include/opencv4  -std=c++17 -g -pthread   -o CMakeFiles/traffic_simulation.dir/src/TrafficObject.cpp.o -c /home/daniel/src/personal/courses/udacity-projects/TrafficSim/src/TrafficObject.cpp",
+  "file": "/home/daniel/src/personal/courses/udacity-projects/TrafficSim/src/TrafficObject.cpp"
+},
+{
+  "directory": "/home/daniel/src/personal/courses/udacity-projects/TrafficSim/build",
+  "command": "/usr/bin/c++  -DLZMA_API_STATIC -isystem /home/daniel/vcpkg/installed/x64-linux/include/opencv4  -std=c++17 -g -pthread   -o CMakeFiles/traffic_simulation.dir/src/TrafficSimulator.cpp.o -c /home/daniel/src/personal/courses/udacity-projects/TrafficSim/src/TrafficSimulator.cpp",
+  "file": "/home/daniel/src/personal/courses/udacity-projects/TrafficSim/src/TrafficSimulator.cpp"
+},
+{
+  "directory": "/home/daniel/src/personal/courses/udacity-projects/TrafficSim/build",
+  "command": "/usr/bin/c++  -DLZMA_API_STATIC -isystem /home/daniel/vcpkg/installed/x64-linux/include/opencv4  -std=c++17 -g -pthread   -o CMakeFiles/traffic_simulation.dir/src/Vehicle.cpp.o -c /home/daniel/src/personal/courses/udacity-projects/TrafficSim/src/Vehicle.cpp",
+  "file": "/home/daniel/src/personal/courses/udacity-projects/TrafficSim/src/Vehicle.cpp"
+}
+]
