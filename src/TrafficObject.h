@@ -14,17 +14,12 @@ enum ObjectType {
 
 class TrafficObject {
 public:
-    // constructor / desctructor
     TrafficObject();
     ~TrafficObject();
-
-    // getter and setter
     int getID() { return _id; }
     void setPosition(double x, double y);
     void getPosition(double& x, double& y);
     ObjectType getType() { return _type; }
-
-    // typical behaviour methods
     virtual void simulate() {};
 
 protected:
@@ -35,7 +30,6 @@ protected:
         threads; // holds all threads that have been launched within this object
     static std::mutex
         _mtx; // mutex shared by all traffic objects for protecting cout
-
 private:
     static int _idCnt; // global variable for counting object ids
 };

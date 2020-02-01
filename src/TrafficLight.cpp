@@ -24,6 +24,7 @@ TrafficLight::TrafficLight() { _currentPhase = TrafficLightPhase::red; }
 void TrafficLight::waitForGreen()
 {
     while (true) {
+        std::this_thread::sleep_for(std::chrono::milliseconds(1));
         TrafficLightPhase tp = _mQueue.receive();
         if (tp == green) {
             return;
@@ -55,7 +56,7 @@ void TrafficLight::cycleThroughPhases()
             = std::chrono::duration_cast<std::chrono::seconds>(end - start)
                   .count();
         // toggles current phase of traffic light if the desired_dur is reached
-        if (duration >= desired_dur) {
+        if (duration == desired_dur) {
             // toggle current phase of traffic light
             switch (_currentPhase) {
             case red:
