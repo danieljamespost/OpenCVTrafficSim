@@ -23,7 +23,6 @@ private:
 class TrafficLight : public TrafficObject {
 public:
     TrafficLight();
-    ~TrafficLight();
 
     TrafficLightPhase getCurrentPhase();
     void waitForGreen();
