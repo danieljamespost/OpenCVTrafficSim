@@ -41,20 +41,21 @@ void TrafficLight::simulate()
 // virtual function which is executed in a thread
 void TrafficLight::cycleThroughPhases()
 {
-    // std::lock_guard<std::mutex> lck(_mutex);
+    // generates random number between 4 and 6
     auto start = std::chrono::high_resolution_clock::now();
+    std::random_device device;
+    std::mt19937 engine(device());
+    std::uniform_int_distribution<> distribution(4, 6);
+    int desired_dur = distribution(engine);
+
     while (true) {
         // measures the time between two cycles
         auto end = std::chrono::high_resolution_clock::now();
         auto duration
             = std::chrono::duration_cast<std::chrono::seconds>(end - start)
                   .count();
-        // generates random number between 4 and 6
-        std::default_random_engine generator;
-        std::uniform_int_distribution<int> distribution(4, 6);
-        int desired_dur = distribution(generator);
         // toggles current phase of traffic light if the desired_dur is reached
-        if (duration == desired_dur) {
+        if (duration >= desired_dur) {
             // toggle current phase of traffic light
             switch (_currentPhase) {
             case red:
