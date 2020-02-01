@@ -11,11 +11,11 @@ enum TrafficLightPhase { red, green };
 
 template <class T> class MessageQueue {
 public:
-    void send(TrafficLightPhase&&);
-    TrafficLightPhase receive();
+    void send(T&&);
+    T receive();
 
 private:
-    std::deque<TrafficLightPhase> _queue;
+    std::deque<T> _queue;
     std::condition_variable _cond;
     std::mutex _mutex;
 };
