@@ -27,9 +27,9 @@ public:
     TrafficLightPhase getCurrentPhase();
     void waitForGreen();
     void simulate();
-    void cycleThroughPhases();
 
 private:
+    void cycleThroughPhases();
     std::condition_variable _condition;
     std::mutex _mutex;
     TrafficLightPhase _currentPhase;

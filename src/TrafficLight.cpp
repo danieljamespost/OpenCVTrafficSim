@@ -56,7 +56,7 @@ void TrafficLight::cycleThroughPhases()
             = std::chrono::duration_cast<std::chrono::seconds>(end - start)
                   .count();
         // toggles current phase of traffic light if the desired_dur is reached
-        if (duration == desired_dur) {
+        if (duration >= desired_dur) {
             // toggle current phase of traffic light
             switch (_currentPhase) {
             case red:
